@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("img/Netflix\ bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+@media screen and (max-width: 1142px) {
+    .main {
+        height: 73vh;
+    }
+
+    .main .box {
+        height: 73vh;
+    }
+}
+
+nav {
+    max-width: 60vw;     /*   60vw */
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+@media screen and (max-width: 1142px) {
+    nav{
+        max-width: 95vw;
+    }
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sens', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    /* >  means imidiat first child */
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 23px;
+    color: white;
+    background-color: rgb(23, 23, 23, 0.7);
+    font-size: medium;
+    border-radius: 4px;
+    border: 1pt solid rgba(250, 246, 246, 0.248);
+}
+
+.btn-red-sm {
+    background-color: rgba(255, 0, 0, 0.856);;
+    font-weight: 400;
+    color: white;
+    padding: 4px 23px;
+    font-size: medium;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-red-sm:hover{
+    transition: all 1s ease-out;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid white;
+}
+
+.btn-red {
+    background-color: rgba(255, 0, 0, 0.856);
+    color: white;
+    font-weight: bold;
+    padding: 6px 23px;
+    font-size: 23px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-red:hover{
+    transition: all 1s ease-out;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1142px) {
+    .hero-buttons {
+        display: grid;
+    }
+    .btn-red {
+        padding: 6px 6px;
+        font-size: 23px;
+        border-radius: 3px;
+    }
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: medium;
+    color: white;
+    background-color: rgb(23, 23, 23, 0.7);
+    border: 1px solid rgb(246, 238, 238, 0.7);
+}
+
+.seperation {
+    height: 5px;
+    background-color: rgb(64, 63, 63);
+}
+
+.heading {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 68px;
+    padding: 40px;
+    font-size: 50px;
+    background: border-box
+    
+}
+
+.first {
+    background-size: max(1200px, 100vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    font-size: 20px;
+    margin: auto;
+    padding: 29px 10px;
+    /* flex-wrap: wrap; */
+    /* display: inline-flex; */
+}
+
+@media screen and (max-width: 1142px) {
+    .first{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* 293px */
+.boxX {
+
+    background-size: max(1200px, 100vw);
+    text-align: left;
+    background-color: #5c1b36;
+    color: white;
+    padding: 29px;
+    border-radius: 24px;
+    min-height: 213px;
+    width: auto;
+    margin: 10px 10px;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+.boxX> :nth-child(1) { 
+    font-size: 23px; 
+    font-weight: bold;   
+}
+.boxX> :nth-child(2) {
+    font-size: 23px;  
+}
+.boxX> :nth-child(3) { 
+    font-size: 23px;     
+}
+
+.boxX:hover{
+    transition: all 1s ease-out;
+    background-color: #5c1b36;
+    border: 2px solid rgb(255, 0, 85);
+}
+
+
+
+.boxXy {
+
+    background-size: max(1200px, 100vw);
+    text-align: left;
+    background-color: #1c1a35;
+    color: white;
+    padding: 29px;
+    border-radius: 24px;
+    min-height: 213px;
+    width: auto;
+    margin: 10px 10px;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+.boxXy> :nth-child(1) { 
+    font-size: 23px; 
+    font-weight: bold;
+}
+.boxXy> :nth-child(2) {
+    font-size: 23px; 
+}
+.boxXy> :nth-child(3) { 
+    font-size: 23px; 
+}
+
+.boxXy:hover{
+    transition: all 1s ease-out;
+    background-color: rgba(121, 52, 186, 0.355);
+    border: 2px solid rgb(132, 0, 255);
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.481);
+    padding: 24px;
+    max-width: 40vw;
+    margin: 34px auto;
+    cursor: pointer;
+
+}
+
+.faqbox:hover{
+    transition: all 1s ease-out;
+    background-color: rgba(128, 128, 128, 0.249);
+}
+
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+    
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 34px 0;
+}
+
+@media screen and (max-width: 1142px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 34px 0;
+        color: white;
+    }
+}
+
+.footer a{
+
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.np{
+    text-decoration: none; 
+    padding: 50px 0px;
+}
+
